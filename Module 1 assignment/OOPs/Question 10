@@ -1,0 +1,15 @@
+final class A {
+    final int num = 10;
+
+    final void display() {
+        System.out.println("Final method in final class");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        System.out.println("Final variable: " + a.num);
+        a.display();
+    }
+}
