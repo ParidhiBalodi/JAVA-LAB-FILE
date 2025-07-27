@@ -1,0 +1,23 @@
+class Book {
+    String title;
+
+    Book(String t) {
+        title = t;
+    }
+
+    // Copy constructor
+    Book(Book b) {
+        this.title = b.title;
+    }
+
+    void display() {
+        System.out.println("Title: " + title);
+    }
+
+    public static void main(String[] args) {
+        Book b1 = new Book("Java Basics");
+        Book b2 = new Book(b1);
+        b1.display();
+        b2.display();
+    }
+}
