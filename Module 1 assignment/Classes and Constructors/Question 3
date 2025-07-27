@@ -1,0 +1,18 @@
+class Car {
+    String model;
+    int year;
+
+    Car(String m, int y) {
+        model = m;
+        year = y;
+    }
+
+    void display() {
+        System.out.println(model + " - " + year);
+    }
+
+    public static void main(String[] args) {
+        Car c = new Car("Tesla", 2023);
+        c.display();
+    }
+}
