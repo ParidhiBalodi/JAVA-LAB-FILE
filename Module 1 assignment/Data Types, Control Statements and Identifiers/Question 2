@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int number = 7;
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number");
+        } else {
+            System.out.println(number + " is an odd number");
+        }
+
+        int day = 2;
+        switch (day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            default: System.out.println("Another day");
+        }
+
+        System.out.println("Counting from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
