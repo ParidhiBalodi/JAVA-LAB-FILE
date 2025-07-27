@@ -1,0 +1,12 @@
+final class A {
+    final void show() {
+        System.out.println("Final method in final class");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        a.show();
+    }
+}
