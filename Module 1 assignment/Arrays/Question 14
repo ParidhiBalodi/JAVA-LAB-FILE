@@ -1,0 +1,15 @@
+import java.util.LinkedHashSet;
+
+public class RemDupli {
+    public static void main(String[] args) {
+        int[] arr = {2, 3, 2, 4, 3, 5};
+        LinkedHashSet<Integer> set = new LinkedHashSet<>();
+
+        for (int num : arr)
+            set.add(num);
+
+        System.out.println("After removing duplicates:");
+        for (int num : set)
+            System.out.print(num + " ");
+    }
+}
