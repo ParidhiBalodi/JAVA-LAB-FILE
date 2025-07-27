@@ -1,0 +1,16 @@
+public class Main {
+    public int pubVar = 1;
+    protected int proVar = 2;
+    int defVar = 3;
+    private int priVar = 4;
+
+    public void show() {
+        System.out.println("Accessing all variables:");
+        System.out.println(pubVar + ", " + proVar + ", " + defVar + ", " + priVar);
+    }
+
+    public static void main(String[] args) {
+        Main s = new Main();
+        s.show();
+    }
+}
