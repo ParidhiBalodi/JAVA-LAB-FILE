@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        int myNumber = 10;
+        double _salary = 5000.50;
+        float $rate = 8.5f;
+        int num123 = 123;
+
+        System.out.println("Valid identifiers used successfully.");
+    }
+}
