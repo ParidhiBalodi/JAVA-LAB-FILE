@@ -1,0 +1,28 @@
+package Mod5_Assignment;
+
+import java.lang.reflect.Method;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface LogExecutionTime {}
+
+public class Service {
+    @LogExecutionTime
+    public void serve() {
+        System.out.println("Serving...");
+    }
+}
+
+public class AnnotationDemo {
+    public static void main(String[] args) throws Exception {
+        Service service = new Service();
+        Method method = service.getClass().getMethod("serve");
+
+        if (method.isAnnotationPresent(LogExecutionTime.class)) {
+            long start = System.currentTimeMillis();
+            method.invoke(service);
+            long end = System.currentTimeMillis();
+            System.out.println("Execution time: " + (end - start) + " ms");
+        }
+    }
+}
